@@ -22,10 +22,12 @@ public class ClassB extends ClassA {
 		// TODO Auto-generated method stub
 
 		
-		ClassA  f= new ClassA();
+		ClassB obj = new ClassB();
+		ClassA obj2 = new ClassA();
+		obj2.c=1;
+		System.out.println(obj2.c);
+		ClassA obj4 = new ClassB();
 		
-		ClassB g=new ClassB();
-		g.Boy(5);
 		
 		
         

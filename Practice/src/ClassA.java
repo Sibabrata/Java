@@ -1,5 +1,5 @@
 public class ClassA {
-
+int c=0;
 	void Boy() {
 		
 System.out.println("John");
