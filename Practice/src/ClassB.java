@@ -18,6 +18,10 @@ public class ClassB extends ClassA {
 	 
  }//end of method
 	
+ void add(){
+	 
+ }
+ 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -27,7 +31,8 @@ public class ClassB extends ClassA {
 		obj2.c=1;
 		System.out.println(obj2.c);
 		ClassA obj4 = new ClassB();
-		
+		ClassB obj5 = (ClassB)obj4;
+		obj5.add();
 		
 		
         
