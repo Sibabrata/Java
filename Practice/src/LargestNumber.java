@@ -41,7 +41,7 @@ public class LargestNumber {
 			
 
 		}
-		
+				
 		System.out.println("\nThe largest number is: " + l);
 		System.out.println("\nThe smallest number is: " + s);
 	}// end of method
