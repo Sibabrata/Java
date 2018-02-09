@@ -1,34 +1,31 @@
 import java.util.Scanner;
 
-
 public class Atm {
-	Scanner sc= new Scanner(System.in); 
-	int TotalAmount= sc.nextInt();
-	int EnteredAmount= sc.nextInt();
-	
-	void Calculate(){
-		int RemainingAmnt= TotalAmount- EnteredAmount;
-		System.out.println(TotalAmount);
-		System.out.println(RemainingAmnt);
-		
+
+	int TotalAmount = 5000;
+
+	void Calculate(int EnteredAmount) {
+		int RemainingAmnt = TotalAmount - EnteredAmount;
+		System.out.println("RemainingAmount:"+RemainingAmnt);
+
 	}
-	
-	
-	
-	
-	
+
 	public static void main(String[] args) {
-		Atm a= new Atm();
-		a.Calculate();
-		
-		if (a.EnteredAmount<a.TotalAmount){
+		Atm a = new Atm();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please Enter Amount");
+
+		int EnteredAmount = sc.nextInt();
+		sc.close();
+
+		if (EnteredAmount <= a.TotalAmount) {
 			System.out.println("Sufficient Balance");
-						
-		}//end of if 
+			a.Calculate(EnteredAmount);
+
+		}// end of if
 		else
 			System.out.println("Insufficient Balance");
-		
-		
+
 	}
 
 }
